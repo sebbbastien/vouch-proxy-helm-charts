@@ -131,3 +131,12 @@ existingSecretName: ""
 #   - name: HTTPS_PROXY
 #     value: "https://example.com"
 extraEnvVars: []
+
+# An array to add extra environment variables from a secret or configMap
+# Example:
+# extraEnvFrom:
+#   - secretRef:
+#       name: my-secret
+#   - configMapRef:
+#       name: my-configmap
+extraEnvFrom: []
